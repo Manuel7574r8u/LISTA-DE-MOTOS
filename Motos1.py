@@ -27,12 +27,14 @@ def eliminar():
     print("Eliminado de la cesta")
 def comprar():
     print("Comprado")
-def añadir()
+def añadir():
     print("Añadido a la cesta")
+def modificar():
+    print("Se ha modificado")
 
 # --- Botones ---
-boton_add = tk.Button(ventana, text="Añadir a la cesta", bg="#ADD8E6")
-boton_update = tk.Button(ventana, text="Modificar compra", bg="#ADD8E6")
+boton_add = tk.Button(ventana, text="Añadir a la cesta", bg="#ADD8E6", command=añadir)
+boton_update = tk.Button(ventana, text="Modificar compra", bg="#ADD8E6", command=modificar)
 boton_buy = tk.Button(ventana, text="Comprar", bg="#ADD8E6", command=comprar)
 boton_delete = tk.Button(ventana, text="Eliminar de la cesta", bg="#ADD8E6", command=eliminar)
 
