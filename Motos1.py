@@ -22,13 +22,19 @@ campo_tarea4 = tk.Entry(ventana, bg="#0078D7", fg="white")
 etiqueta_tarea5 = tk.Label(ventana, text="Combustible:")
 campo_tarea5 = tk.Entry(ventana, bg="#0078D7", fg="white")
 
+# --- Funciones ---
+def eliminar():
+    print("Eliminado de la cesta")
+def comprar():
+    print("Comprado")
+def añadir()
+    print("Añadido a la cesta")
+
 # --- Botones ---
 boton_add = tk.Button(ventana, text="Añadir a la cesta", bg="#ADD8E6")
 boton_update = tk.Button(ventana, text="Modificar compra", bg="#ADD8E6")
-boton_buy = tk.Button(ventana, text="Comprar", bg="#ADD8E6")
-boton_delete = tk.Button(ventana, text="Eliminar de la cesta", bg="#ADD8E6")
-
-
+boton_buy = tk.Button(ventana, text="Comprar", bg="#ADD8E6", command=comprar)
+boton_delete = tk.Button(ventana, text="Eliminar de la cesta", bg="#ADD8E6", command=eliminar)
 
 # --- Lista de Tareas ---
 etiqueta_lista = tk.Label(ventana, text="Compras pendientes:")
