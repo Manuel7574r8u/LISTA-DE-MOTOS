@@ -1,0 +1,126 @@
+/* ===== RESET BÁSICO ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(206, 137, 10);
+    color: #000000;
+    min-height: 150vh;
+}
+
+.motos {
+  display: flex;
+  gap: 15px; /* separación entre imágenes */
+}
+
+header {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background: rgba(58, 51, 51, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+a {
+    color: #082679;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.4s;
+}
+
+a:hover {
+    color: #dab165;
+}
+
+img {
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    transition: transform 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+section {
+    background: rgba(255,255,255,0.08);
+    padding: 1.8rem;
+    border-radius: 16px;
+    line-height: 1.7;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #082679;
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+article img {
+    width: 170px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 0.8rem; /* 👈 separa la imagen del texto */
+}
+
+
+article{
+    background: rgba(0,0,0,0.4);
+    padding: 1rem;
+    border-radius: 12px;
+    transition: transform 0.4s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article:hover {
+    transform: translateY(-8px);
+    background: rgba(82, 6, 6, 0.2);
+}
+
+article strong {
+    display: block;
+    font-size: 1.1rem;
+}
+
+hr {
+    margin-bottom: 1rem;
+    border: none;
+    height: 1px;
+    background:#082679;
+}
+
+footer {
+    text-align: center;
+    padding: 5rem;
+    background: rgba(0,0,0,0.5);
+    font-size: 1rem;
+}
